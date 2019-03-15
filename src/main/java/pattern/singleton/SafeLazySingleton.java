@@ -9,6 +9,10 @@ public class SafeLazySingleton {
 
     private volatile static SafeLazySingleton safeLazySingleton;
 
+    private SafeLazySingleton(){
+
+    }
+
     public static SafeLazySingleton getSafeLazySingleton(){
 
         if (safeLazySingleton == null){

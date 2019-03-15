@@ -9,6 +9,10 @@ public class HungerSingleton {
 
     private static HungerSingleton hungerSingleton = new HungerSingleton();
 
+    private HungerSingleton(){
+
+    }
+
     public static HungerSingleton getHungerSingleton(){
         return hungerSingleton;
     }

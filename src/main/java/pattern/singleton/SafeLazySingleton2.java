@@ -7,12 +7,16 @@ package pattern.singleton;
  */
 public class SafeLazySingleton2 {
 
-    public static SafeLazySingleton getSafeLazySingleton(){
+    public static SafeLazySingleton2 getSafeLazySingleton(){
             return SafeLazySingleton.safeLazySingleton;
         }
 
+    private SafeLazySingleton2(){
+
+    }
+
     private static class SafeLazySingleton{
-        private static SafeLazySingleton safeLazySingleton = new SafeLazySingleton();
+        private static SafeLazySingleton2 safeLazySingleton = new SafeLazySingleton2();
     }
 
 }

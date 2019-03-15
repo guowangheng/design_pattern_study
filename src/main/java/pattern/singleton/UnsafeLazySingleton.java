@@ -9,6 +9,10 @@ public class UnsafeLazySingleton {
 
     public static UnsafeLazySingleton lazySingleton;
 
+    private UnsafeLazySingleton(){
+
+    }
+
     public static UnsafeLazySingleton getLazySingleton(){
         if (lazySingleton == null){
             lazySingleton = new UnsafeLazySingleton();
